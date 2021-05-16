@@ -1,0 +1,25 @@
+{
+    "name": "Adblocker",
+    "version": "1.0",
+    "description": "Youtube Adblocker",
+    "permissions": [
+        "webRequest", 
+        "webRequestBlocking", 
+        "<all_urls>",
+        "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["contentScript.js"],
+            "css": ["blockads.css"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}

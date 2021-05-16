@@ -1,0 +1,13 @@
+.checkbox-wrapper {
+    display: flex;
+}
+
+label {
+    color: green;
+    white-space: nowrap;
+}
+
+input {
+    color: blue;
+    margin-left: 5px;
+}
